@@ -36,7 +36,7 @@ app.MapPost("api/topics/{id}/messages", async (AppDbContext context, int id, Mes
     }
 
     var subscriptions = context.Subscriptions.Where(s => s.TopicId == id);
-    if (subscriptions.Count() == 0)
+    if (!subscriptions.Any())
     {
         return Results.NotFound("There are no subscriptions for this topic.");
     }
@@ -85,7 +85,7 @@ app.MapGet("api/subscriptions/{id}/messages", async (AppDbContext context, int i
     }
 
     var messages = context.Messages.Where(m => m.SubscriptionId == id && m.MessageStatus != "SENT");
-    if (messages.Count() == 0)
+    if (!messages.Any())
     {
         return Results.NotFound("No new messages found.");
     }

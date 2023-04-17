@@ -8,7 +8,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageBroker", "MessageBroker\MessageBroker.csproj", "{FB13F28B-A525-4C5F-AD15-6197D7406878}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageBroker", "MessageBroker\MessageBroker.csproj", "{FB13F28B-A525-4C5F-AD15-6197D7406878}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subscriber", "Subscriber\Subscriber.csproj", "{BD06949C-88A5-4056-80F5-8B694EB161EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +22,10 @@ Global
 		{FB13F28B-A525-4C5F-AD15-6197D7406878}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB13F28B-A525-4C5F-AD15-6197D7406878}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB13F28B-A525-4C5F-AD15-6197D7406878}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD06949C-88A5-4056-80F5-8B694EB161EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD06949C-88A5-4056-80F5-8B694EB161EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD06949C-88A5-4056-80F5-8B694EB161EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD06949C-88A5-4056-80F5-8B694EB161EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
